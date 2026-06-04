@@ -1,0 +1,115 @@
+.add-edit-container{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px;
+
+  background:linear-gradient(
+    135deg,
+    #f8fafc,
+    #e2e8f0,
+    #ffffff
+  );
+}
+
+.add-edit-form{
+  width:500px;
+
+  background:white;
+
+  padding:40px;
+
+  border-radius:25px;
+
+  box-shadow:
+  0 20px 40px rgba(0,0,0,0.1);
+
+  border:1px solid #e5e7eb;
+}
+
+.add-edit-form h1{
+  text-align:center;
+
+  margin-bottom:30px;
+
+  color:#111827;
+
+  font-size:36px;
+}
+
+.add-edit-form label{
+  display:block;
+
+  margin-bottom:8px;
+
+  font-weight:600;
+
+  color:#374151;
+}
+
+.add-edit-form input,
+.add-edit-form select{
+  width:100%;
+
+  padding:14px;
+
+  margin-bottom:20px;
+
+  border-radius:12px;
+
+  border:1px solid #d1d5db;
+
+  background:#f9fafb;
+
+  font-size:15px;
+
+  transition:0.3s;
+}
+
+.add-edit-form input:focus,
+.add-edit-form select:focus{
+  outline:none;
+
+  border-color:#3b82f6;
+
+  box-shadow:
+  0 0 10px rgba(59,130,246,0.2);
+}
+
+.add-edit-form input[type="file"]{
+  background:white;
+  padding:10px;
+}
+
+.add-edit-form button{
+  width:100%;
+
+  padding:15px;
+
+  border:none;
+
+  border-radius:12px;
+
+  background:
+  linear-gradient(
+    to right,
+    #2563eb,
+    #7c3aed
+  );
+
+  color:white;
+
+  font-size:17px;
+
+  font-weight:bold;
+
+  transition:0.3s;
+}
+
+.add-edit-form button:hover{
+  transform:translateY(-3px);
+
+  box-shadow:
+  0 10px 20px rgba(37,99,235,0.3);
+}

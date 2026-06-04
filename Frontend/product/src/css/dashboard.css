@@ -1,0 +1,70 @@
+.dashboard{
+  min-height:100vh;
+  padding:50px;
+  background:
+  radial-gradient(circle at top left,#7c3aed,#111827 40%),
+  radial-gradient(circle at bottom right,#06b6d4,#111827 40%);
+}
+
+.dashboard h1{
+  text-align:center;
+  font-size:60px;
+  margin-bottom:60px;
+  font-weight:bold;
+  background:linear-gradient(to right,#fff,#38bdf8);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.dashboard-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+  gap:35px;
+}
+
+.dashboard-card{
+  position:relative;
+  overflow:hidden;
+  padding:50px 30px;
+  border-radius:25px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(12px);
+  border:1px solid rgba(255,255,255,0.1);
+  transition:0.5s;
+}
+
+.dashboard-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    45deg,
+    transparent,
+    rgba(255,255,255,0.15),
+    transparent
+  );
+  transform:translateX(-100%);
+  transition:0.6s;
+}
+
+.dashboard-card:hover::before{
+  transform:translateX(100%);
+}
+
+.dashboard-card:hover{
+  transform:translateY(-12px) scale(1.03);
+  box-shadow:
+  0 10px 30px rgba(0,0,0,0.4),
+  0 0 25px rgba(59,130,246,0.4);
+}
+
+.dashboard-card h2{
+  font-size:34px;
+  margin-bottom:20px;
+}
+
+.dashboard-card p{
+  color:#d1d5db;
+  font-size:18px;
+  line-height:1.6;
+}
