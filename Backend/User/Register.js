@@ -25,6 +25,7 @@ async function Register (req,res) {
         }
 
         const hashpassword = await bcrypt.hash(password,10);
+        
         let RegisterData = await collection.insertOne({
             name : name,
             email : email,

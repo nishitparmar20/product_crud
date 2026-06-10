@@ -9,6 +9,7 @@ async function Add(req,res) {
         category,
         company 
     }=req.body;
+    
     console.log(req.body);
     
     if(!productName || !price || !category || !company) {

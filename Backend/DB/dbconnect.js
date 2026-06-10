@@ -7,7 +7,7 @@ async function dbconnect() {
         await client.connect();
         console.log("✅ Connected to MongoDB successfully");
 
-        const db = client.db(); // DB name from URI
+        const db = client.db("product"); // DB name from URI
         return db;
     } catch (err) {
         console.error("❌ MongoDB connection error:", err);
